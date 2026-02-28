@@ -1,40 +1,22 @@
 import Link from "next/link"
-import { Linkedin, Github, Instagram } from "lucide-react"
-import { Button } from "@/components/ui/button"
-
-const socialLinks = [
-  { icon: Linkedin, href: "https://linkedin.com", label: "Linkedin" },
-  { icon: Github, href: "https://github.com", label: "Github" },
-  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-]
 
 export function Footer() {
   return (
-    <footer className="bg-[#0a0a0a] px-6 pb-8">
-      <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 border-t border-neutral-800 pt-8 md:flex-row md:justify-between">
-        <p className="text-xs text-neutral-500">
-          Carlos Henrique - Todos os direitos reservados.
-        </p>
+    <footer className="bg-[#0a0a0a] px-6 pb-16">
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 border-t border-neutral-800 pt-12 md:flex-row md:justify-between text-center md:text-left">
+        
+        {/* Lado Esquerdo: Copyright levemente maior */}
+        <div>
+          <p className="text-lg font-semibold text-neutral-500 tracking-tight">
+            © {new Date().getFullYear()} Carlos Henrique — Todos os direitos reservados.
+          </p>
+        </div>
 
-        <div className="flex items-center gap-2">
-          {socialLinks.map((social) => (
-            <Button
-              key={social.label}
-              asChild
-              variant="ghost"
-              size="sm"
-              className="gap-1.5 text-xs text-neutral-500 hover:bg-neutral-800 hover:text-white"
-            >
-              <Link
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <social.icon className="size-3.5" />
-                {social.label}
-              </Link>
-            </Button>
-          ))}
+        {/* Lado Direito: Frase personalizada com padrão de letras do Felipe */}
+        <div className="md:text-right">
+          <p className="text-lg font-semibold text-neutral-500 tracking-tight">
+            Desenvolvido com <span className="text-neutral-500">Next.js, TailwindCSS</span> e muito <span className="italic">café</span> ☕
+          </p>
         </div>
       </div>
     </footer>

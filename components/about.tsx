@@ -5,98 +5,70 @@ import { Button } from "@/components/ui/button"
 
 export function About() {
   return (
-    <section id="sobre" className="bg-white px-6 py-24">
-      <div className="mx-auto grid max-w-5xl items-start gap-12 lg:grid-cols-[280px_1fr]">
+    <section id="sobre" className="bg-white px-6 py-32">
+      <div className="mx-auto grid max-w-7xl items-center gap-16 lg:grid-cols-[400px_1fr]">
+        
         {/* Profile photo */}
-        <div className="relative mx-auto aspect-[3/4] w-full max-w-[280px] overflow-hidden rounded-2xl lg:mx-0">
+        <div className="relative mx-auto aspect-[3/4] w-full max-w-[400px] overflow-hidden rounded-3xl lg:mx-0 shadow-2xl">
           <Image
-            src="/images/profile.jpg"
+            src="/Eu.jpg"
             alt="Foto de Carlos Henrique"
             fill
-            className="object-cover"
+            className="object-cover transition-transform duration-500 hover:scale-105"
             priority
           />
         </div>
 
-        {/* Bio */}
+        {/* Bio com novas cores e textos */}
         <div>
-          <p className="text-xs font-medium uppercase tracking-widest text-neutral-400">
-            {"Muito prazer \uD83D\uDC4B\uD83C\uDFFB"}
-          </p>
+          <p className="text-neutral-700 text-base md:text-lg">Muito prazer 👋🏻</p>
+          
+          <div className="my-2.5">
+            <h2 className="text-4xl md:text-5xl mb-4 text-neutral-950 font-semibold tracking-tight">
+              Carlos Henrique
+            </h2>
+            <h3 className="text-neutral-800 text-lg md:text-xl mb-6 font-medium">
+              Desenvolvedor Full Stack & Especialista em TI na Saúde
+            </h3>
+          </div>
 
-          <h2 className="mt-2 text-3xl font-bold text-neutral-900 md:text-4xl">
-            Carlos Henrique
-          </h2>
+          <div className="space-y-6 text-neutral-700 text-base md:text-lg leading-relaxed">
+            <p>
+              Sou formado em Tecnologia em Análise e Desenvolvimento de Sistemas pela PUC Minas e atualmente sou pós-graduando em Ciência de Dados e Inteligência Artificial Aplicadas à Saúde. Atuo no Laboratório de Tecnologia e Inovação em Saúde (LTIS), onde desenvolvo sistemas médicos e acadêmicos, como plataformas de simulados e ferramentas de apoio ao aprendizado.
+            </p>
 
-          <p className="mt-1 text-sm font-medium text-neutral-500">
-            <span className="font-semibold text-neutral-900">
-              Desenvolvedor Full Stack
-            </span>
-          </p>
+            <p>
+              Tenho experiência com C#, JavaScript, TypeScript, React e React Native, além de trabalhar com metodologias ágeis como Scrum e Kanban. Também presto suporte técnico a equipamentos utilizados em aulas e simulações médicas, incluindo manutenção de manequins da Laerdal.
+            </p>
 
-          <div className="mt-5 space-y-4 text-sm leading-relaxed text-neutral-600 md:text-base">
             <p>
-              {"Sou "}
-              <span className="font-semibold text-neutral-900">
-                Carlos Henrique Santos da Silva
-              </span>
-              {", um entusiasta do desenvolvimento de software, focado em criar experiencias de usuario intuitivas, eficientes e adaptaveis para web e mobile."}
-            </p>
-            <p>
-              {"Minhas principais tecnologias sao "}
-              <span className="font-semibold text-emerald-600">JavaScript</span>
-              {", "}
-              <span className="font-semibold text-emerald-600">React</span>
-              {", "}
-              <span className="font-semibold text-emerald-600">React Native</span>
-              {" e "}
-              <span className="font-semibold text-emerald-600">C#</span>
-              {"."}
-            </p>
-            <p>
-              {"Minha jornada na programacao comecou em "}
-              <strong>janeiro de 2023</strong>
-              {", quando iniciei o curso de "}
-              <strong>Analise e Desenvolvimento de Sistemas</strong>
-              {". Desde entao, venho me dedicando constantemente ao aperfeicoamento das minhas habilidades."}
-            </p>
-            <p>
-              {"Atualmente, atuo no "}
-              <strong>
-                {"Laboratorio de Tecnologia e Inovacao em Saude da Medicina \u2013 Campus Contagem (PUC Minas)"}
-              </strong>
-              {", onde colaboro no desenvolvimento de solucoes inovadoras para a area da saude."}
-            </p>
-            <p>
-              Estou sempre em busca de desafios que me permitam crescer
-              profissionalmente e contribuir para projetos inovadores.
+              Iniciei minha trajetória na área administrativa e financeira, o que me proporcionou uma base sólida em organização, atendimento e gestão de processos. Hoje, uno tecnologia e saúde com foco em desenvolver soluções inteligentes, utilizando dados e Inteligência Artificial de forma ética e estratégica.
             </p>
           </div>
 
-          {/* Social links */}
-          <div className="mt-6 flex items-center gap-4">
-            {[
-              { icon: Linkedin, href: "https://linkedin.com", label: "Linkedin" },
-              { icon: Github, href: "https://github.com", label: "Github" },
-              { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-            ].map((social) => (
-              <Button
-                key={social.label}
-                asChild
-                variant="ghost"
-                size="sm"
-                className="gap-1.5 text-xs text-neutral-600 hover:bg-neutral-100 hover:text-neutral-900"
-              >
-                <Link
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <social.icon className="size-4" />
-                  {social.label}
-                </Link>
-              </Button>
-            ))}
+          {/* Social links ajustados para o estilo solicitado */}
+          <div className="mt-8 flex gap-6 md:gap-8 justify-center lg:justify-start">
+            <Link 
+              href="https://www.linkedin.com/in/carlos-henrique-santos-da-silva-b5634b268" 
+              target="_blank"
+              className="transition-opacity hover:opacity-70"
+            >
+              <Linkedin className="size-7 text-neutral-800" />
+            </Link>
+            <Link 
+              href="https://github.com/IzzatCarlos" 
+              target="_blank"
+              className="transition-opacity hover:opacity-70"
+            >
+              <Github className="size-7 text-neutral-800" />
+            </Link>
+            <Link 
+              href="https://www.instagram.com/izzat_carlos/" 
+              target="_blank"
+              className="transition-opacity hover:opacity-70"
+            >
+              <Instagram className="size-7 text-neutral-800" />
+            </Link>
           </div>
         </div>
       </div>
