@@ -10,7 +10,6 @@ export function CTA() {
     <section id="contato" className="bg-white px-6 py-24 md:py-32 border-t border-neutral-100">
       <div className="mx-auto max-w-7xl flex flex-col lg:flex-row justify-between items-start lg:items-center gap-16">
         
-        {/* Lado Esquerdo - Texto e Ações Principais */}
         <div id="left" className="flex-1">
           <div className="flex items-center gap-2">
             <div className="bg-emerald-500 h-2.5 w-2.5 rounded-full animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.4)]"></div>
@@ -56,11 +55,10 @@ export function CTA() {
           </div>
         </div>
 
-        {/* Lado Direito - Social e Logo */}
         <div id="right" className="flex flex-col items-center text-center lg:min-w-[400px]">
           <div className="relative mb-6">
             <Image
-              src="/LogoEu.png" 
+              src="/LogoEU.jpg" 
               alt="Logo Call to Action"
               width={160}
               height={160}

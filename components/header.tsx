@@ -9,8 +9,8 @@ import { Button } from "@/components/ui/button"
 const navLinks = [
   { label: "Home", href: "#inicio" },
   { label: "Sobre mim", href: "#sobre" },
-  { label: "Processo", href: "#processo" },
   { label: "Cases", href: "#projetos" },
+  { label: "Processo", href: "#processo" },
   { label: "Perguntas Frequentes", href: "#faq" },
 ]
 
@@ -28,7 +28,7 @@ export function Header() {
         >
           <div className="relative size-10 md:size-12 overflow-hidden rounded-full bg-neutral-800">
             <Image
-              src="/LogoEU.png" 
+              src="/LogoEU.jpg" 
               alt="Logo Carlos Henrique"
               fill
               className="object-cover grayscale brightness-125" 
@@ -36,7 +36,6 @@ export function Header() {
           </div>
         </Link>
 
-        {/* Desktop nav */}
         <nav className="hidden items-center gap-10 md:flex">
           {navLinks.map((link) => (
             <Link
@@ -49,7 +48,6 @@ export function Header() {
           ))}
         </nav>
 
-        {/* Botão de Currículo Desktop */}
         <Button
           asChild
           size="lg"
@@ -61,7 +59,7 @@ export function Header() {
           </a>
         </Button>
 
-        {/* Mobile toggle */}
+
         <Button
           variant="ghost"
           size="icon"
@@ -73,7 +71,6 @@ export function Header() {
         </Button>
       </div>
 
-      {/* Mobile nav */}
       {mobileOpen && (
         <div className="border-t border-neutral-800 bg-[#0a0a0a] md:hidden">
           <nav className="flex flex-col gap-4 px-8 py-10">
