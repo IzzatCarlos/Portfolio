@@ -18,7 +18,7 @@ const projects = [
     description:
       "O projeto do 2° semestre do curso de ADS, é uma plataforma online destinada a facilitar o processo de recrutamento e seleção de pessoal. De um lado, candidatos podem preencher seus currículos e aplicar para vagas de emprego que se alinham com suas habilidades e experiências.",
     tags: ["HTML", "CSS", "C#", "JavaScript"],
-    src: "/jobhub.jpg",
+    src: "/Jobhub.jpg",
     repoUrl: "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e2-proj-int-t9-jobhub.git",
   },
   {
