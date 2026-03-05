@@ -14,27 +14,22 @@ export function Hero() {
         <div className="absolute -right-20 top-0 h-full w-[300px] bg-blue-900/10 blur-[120px]" />
       </div>
 
-      {/* Conteúdo */}
       <div className="relative z-10 flex flex-col items-center">
-        {/* Tag azul pulsante */}
         <span className="inline-flex items-center gap-3 rounded-full border border-neutral-700 bg-neutral-900 px-6 py-2 text-sm font-bold text-neutral-200 md:text-base transition-all hover:border-blue-500/50">
           <span className="size-2.5 animate-pulse rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)]" />
           Desenvolvedor Full Stack
         </span>
 
-        {/* Headline com mt-12 para maior espaço e font-semibold padrão Felipe */}
         <h1 className="mx-auto mt-12 max-w-5xl text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.15] text-white tracking-tight">
           Construindo experiências digitais, <br className="hidden md:block" />
           do design ao código.
         </h1>
 
-        {/* Subtitle com mt-8 e neutral-400 */}
         <p className="mx-auto mt-8 max-w-3xl text-pretty text-base leading-relaxed text-neutral-400 md:text-xl">
           Meu trabalho é transformar ideias e layouts em código limpo e responsivo.
           Pensando na experiência do usuário em cada etapa do desenvolvimento.
         </p>
 
-        {/* Buttons */}
         <div className="mt-12 flex flex-wrap items-center justify-center gap-6">
           <button className="rounded-full bg-blue-600 px-10 py-5 text-lg font-semibold text-white hover:bg-blue-700 transition-all hover:scale-105 shadow-lg shadow-blue-900/20">
             <Link href="#contato">Fale comigo</Link>

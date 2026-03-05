@@ -9,7 +9,6 @@ const projects = [
     description:
       "Um projeto criado no 3° Semestre do curso de ADS. O app mobile FutScore surge como uma solução acessível e abrangente para os fãs do futebol brasileiro, oferecendo placares ao vivo, tabelas, jogos futuros, informações sobre times e muito mais.",
     tags: ["JavaScript", "React Native", "Mobile"],
-    // Se Eu.jpg funciona, garanta que os arquivos abaixo existam na pasta public exatamente com esses nomes
     src: "/Futscore.jpg", 
     repoUrl: "https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e1-proj-web-t10-futscore.git",
   },

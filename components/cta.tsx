@@ -7,7 +7,7 @@ export function CTA() {
   const whatsappLink = "https://wa.me/qr/2U3QN7N4LBO6I1";
 
   return (
-    <section id="contato" className="bg-white px-6 py-24 md:py-32 border-t border-neutral-100">
+    <section id="contato" className="bg-white px-6 py-24 md:py-36 border-t border-neutral-100">
       <div className="mx-auto max-w-7xl flex flex-col lg:flex-row justify-between items-start lg:items-center gap-16">
         
         <div id="left" className="flex-1">

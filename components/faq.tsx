@@ -43,11 +43,9 @@ export function FAQ() {
   return (
     <section id="faq" className="bg-white px-6 py-32">
       <div className="mx-auto max-w-7xl">
-        {/* Grid mantido com distanciamento máximo e alinhamento lateral */}
         <div className="grid gap-16 lg:grid-cols-[400px_1fr] lg:gap-64 items-start">
           
-          {/* Coluna da Esquerda (Título e Card) */}
-          <div className="flex flex-col sticky top-32">
+          <div className="flex flex-col lg:sticky lg:top-32">
             <h2 className="text-4xl font-semibold text-neutral-950 md:text-5xl tracking-tight leading-[1.1]">
               Perguntas Frequentes
             </h2>
@@ -73,7 +71,6 @@ export function FAQ() {
             </div>
           </div>
 
-          {/* Coluna da Direita (Acordeão) */}
           <div className="w-full lg:max-w-xl lg:ml-auto">
             <Accordion type="single" collapsible className="w-full border-t border-neutral-200">
               {faqs.map((faq, index) => (
